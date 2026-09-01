@@ -1,5 +1,5 @@
 import React, {useEffect,useMemo,useState} from 'react'
-import {Archive,ArrowRightLeft,Camera,Check,CircleUserRound,Edit3,Grid2X2,Heart,Menu,PackagePlus,Plus,Save,Search,Sparkles,Trash2,Upload,X} from 'lucide-react'
+import {Archive,ArrowRightLeft,Camera,Check,CircleUserRound,Copy,Edit3,Grid2X2,Heart,Menu,PackagePlus,Plus,Save,Search,Sparkles,Trash2,Upload,X} from 'lucide-react'
 const KEY='photo-shelf-public-v1', C3=['ヨリ','チュウ','ヒキ'], C5=['ヨリ','チュウ','ヒキ','座りヨリ','座りヒキ']
 const read=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'null')}catch{return null}}
 const Button=({children,onClick,tone='',disabled})=><button type="button" disabled={disabled} onClick={onClick} className={'btn '+tone}>{children}</button>
